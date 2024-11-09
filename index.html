@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodas de Ouro</title>
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: 0;
+            background-color: #f8e6c6;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            padding: 0;
+        }
+
+        /* Container principal */
+        .container {
+            width: 100%;
+            max-width: 1500px;
+            position: relative;
+            padding: 20px;
+        }
+
+        /* Linha do título */
+        .titulo {
+            font-size: 3.5em;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        /* Imagem da aliança flutuante */
+        .imagem-lateral {
+            position: absolute;
+            top: 15px; /* Ajuste esta posição para controlar a altura da imagem */
+            right: 20px; /* Ajuste a distância da borda direita */
+            width: 200px; /* Controle o tamanho da imagem da aliança aqui */
+            height: auto;
+        }
+
+        /* Informações do casal */
+        .casal-info {
+            margin-top: 10px;
+        }
+
+        .casal-info img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .casal-info p {
+            font-size: 2.5em;
+            color: #555;
+        }
+
+        /* Produtos */
+        .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .produto {
+            width: 200px;
+            text-align: center;
+        }
+
+        .produto img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .produto p {
+            font-size: 0.9em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        /* Estilos para tornar a página responsiva */
+        @media (max-width: 600px) {
+            .titulo {
+                font-size: 2em;
+            }
+            .casal-info img {
+                width: 150px;
+            }
+            .produto {
+                width: 90%;
+            }
+            .imagem-lateral {
+                width: 30px; /* Tamanho reduzido para dispositivos móveis */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Linha do título com imagem flutuante à direita -->
+        <h1 class="titulo">BODAS DE OURO</h1>
+        <img src="alianças-removebg-preview.png" alt="Ícone de Alianças" class="imagem-lateral">
+
+        <h2>Gostaria de nos presentear?</h2>
+
+        <div class="casal-info">
+            <!-- Foto do casal -->
+            <img src="clovis e silvia.jpeg" alt="Foto do Casal">
+            <p>Clovis e Silvia Bondan</p>
+        </div>
+
+        <div class="produtos">
+            <!-- Produto 1 -->
+            <div class="produto">
+                <h2>Champagne</h2>
+                <h3>R$ 100,00</h3>
+                <a href="https://mpago.la/2RkwEG8" target="_blank">
+                    <img src="Viuve.jpeg" alt="Champagne para brindar este momento">
+                </a>
+                <p>Voce pode ter certeza que eles irão brindar a vida</p>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="produto">
+                <h2>Viagem</h2>
+                <h3>R$ 150,00</h3>
+                <a href="https://mpago.la/2sNNBee" target="_blank">
+                    <img src="praia.jpeg" alt="Uma viagem sempre relaxa um casal">
+                </a>
+                <p>Um viagem para descansar e relembrar bons momentos</p>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="produto">
+                <h2>Lava Roupas</h2>
+                <h3>R$ 200,00</h3>
+                <a href="https://mpago.la/1cD6gsj" target="_blank">
+                    <img src="Maquina.jpeg" alt="Maquina de Lavar Roupas estragou! 😁">
+                </a>
+                <p>A lavadora da praia estragou. Alguém ajuda a garantir o veraneio?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
